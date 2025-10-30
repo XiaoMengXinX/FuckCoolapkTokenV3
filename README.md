@@ -1,0 +1,1 @@
+# FuckCoolapkTokenV3
