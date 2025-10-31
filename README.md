@@ -8,21 +8,23 @@ Generate random request token for Coolapk Android APP
 package main
 
 import (
-    "fmt"
-    "github.com/XiaoMengXinX/FuckCoolapkTokenV3"
+	"fmt"
+	"github.com/XiaoMengXinX/FuckCoolapkTokenV3"
 )
 
 func main() {
 	deviceID := "YOUR_DEVICE_ID"
 	appVersion := 2510281
+	timestamp := 1761844580
 
-	t, err := token.GetToken(deviceID, appVersion, 1761844580)
+	t, err := token.GetToken(deviceID, appVersion, int64(timestamp))
 	if err != nil {
 		panic(err)
 	}
 
 	fmt.Println("Generated Token:", t)
 }
+
 ```
 
 output:
